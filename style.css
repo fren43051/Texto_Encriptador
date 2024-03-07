@@ -177,7 +177,7 @@ main {
 /* Estilos para el resultado del encriptado */
 .seccion-resultado {
     width: 270px;
-    height: 530px;
+    height: 510px;
     background: var(--gris-claro);
     box-shadow: 10px 24px 32px -8px var(--gris-azulado);
     position: relative;
@@ -274,7 +274,7 @@ footer {
     text-align: center;
     height:5px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     opacity: 0.4;
 }
 
