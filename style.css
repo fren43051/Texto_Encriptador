@@ -268,7 +268,7 @@ main {
 
 /* Pie de página */
 footer {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
     border-top: 2px solid var(--gris-claro);
