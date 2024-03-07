@@ -1,4 +1,4 @@
-/* Variables Globales */
+  /* Variables Globales */
 :root {
     /* Colores */
     --blanco: #fdfdfd;
@@ -177,12 +177,11 @@ main {
 /* Estilos para el resultado del encriptado */
 .seccion-resultado {
     width: 270px;
-    height: 510px;
+    height: 530px;
     background: var(--gris-claro);
     box-shadow: 10px 24px 32px -8px var(--gris-azulado);
     position: relative;
-    margin-top: 20px;
-    margin-bottom:50px;
+    margin-top: 10px;
     border-radius: 32px;
     text-align: center;
 }
@@ -269,11 +268,12 @@ main {
 /* Pie de página */
 footer {
     margin-top: 0px;
+    margin-bottom: 10px;
     padding: 10px;
     border-top: 2px solid var(--gris-claro);
     color: var(--blanco);
     text-align: center;
-    height: -5px;
+    height:15px;
     font-size: 20px;
     font-weight: 700;
     opacity: 0.4;
@@ -377,4 +377,3 @@ footer {
     align-items: center;
     }
 }
-
