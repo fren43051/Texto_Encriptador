@@ -182,7 +182,7 @@ main {
     box-shadow: 10px 24px 32px -8px var(--gris-azulado);
     position: relative;
     margin-top: 10px;
-    margin-bottom:50px;
+    margin-bottom:30px;
     border-radius: 32px;
     text-align: center;
 }
