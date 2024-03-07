@@ -1,0 +1,278 @@
+/* Variables Globales */
+:root {
+    --inter-font: "Inter", sans-serif;
+    --font: #E5E5E5;
+    --white: #F3F5FC;
+    --Dark-Blue: #0A3871;
+    --Gray: #393030;
+    --Gray-Opaque: #88b1c7;
+    --Gray-light: #ccd1e0;
+    --Shadow: rgba(0, 0, 0, 0.8);
+    --Hover-Blue: #3A60B3;
+    --white-blue: #a8b7bb;
+    --Dark-Blue-Transparent: #0a38718a;
+    --Dark-Gray-Blue: #46505a;
+    --Dark-Gray-Blue-2: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--inter-font);
+    background: var(--white); /* Ahora será #F3F5FC */
+}
+
+::selection {
+    background: var(--Dark-Blue);
+    color: var(--white);
+}
+
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Encabezado */
+header {
+    position: absolute;
+    margin: 40px 0 0 40px;
+}
+
+header .logo {
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+/* Principal */
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.encriptado {
+    width: 60%;
+    margin: 168px 0 0 140px;
+    background: transparent;
+}
+
+.encriptar-texto {
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--Gray);
+    border-radius: 15px;
+    resize: none;
+}
+
+.encriptar-texto::placeholder {
+    color: var(--Dark-Blue);
+}
+
+.aviso-encriptado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 470px;
+}
+
+.icono-aviso {
+    width: 14px;
+    height: 14px;
+    color: var(--Gray-Opaque);
+    transparent: 0.9;
+}
+
+.texto-aviso {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    transparent: 0.5;
+    color: var(--Gray-Opaque);
+
+}
+
+/* Botónes */
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.boton-encriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--Dark-Blue);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 24px -5px var(--Shadow);
+}
+
+.boton-encriptar:active {
+    box-shadow: inset 2px 2px 4px var(--font), inset -3px -4px 8px var(--Dark-Blue);
+    color: var(--white-blue);
+    transform: scale(0.95);
+}
+
+.boton-encriptar:hover {
+    background: var(--Hover-Blue);
+}
+
+.boton-desencriptar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Dark-Blue);
+    background: var(--Gray-light);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 24px -5px var(--Shadow);
+}
+
+.boton-desencriptar:active {
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue), inset -3px -4px 8px var(--font);
+    color: var(--Dark-Blue-Transparent);
+    transform: scale(0.95);
+}
+
+.boton-desencriptar:hover {
+    background: var(--Hover-Blue);
+}
+
+/* Resultado */
+.mensaje {
+    width: 270px;
+    height: 580px;
+    background: var(--font);
+    box-shadow: 10px 24px 32px -8px var(--Dark-Gray-Blue);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.mensaje-contenedor {
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--font);
+}
+
+.muneco {
+    background: var(--font);
+}
+
+.mensaje-uno {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Dark-Gray-Blue);
+    background: var(--font);
+}
+
+.mensaje-dos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--Gray);
+    background: var(--font);
+}
+
+.mensaje-encriptado {
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Dark-Gray-Blue-2);
+    background: transparent;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.mensaje-encriptado:focus {
+    outline: none;
+}
+
+.boton-copiar {
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--Gray-light);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton-copiar:active {
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue), inset -3px -4px 8px var(--font);
+    color: var(--Dark-Blue-Transparent);
+    transform: scale(0.95);
+}
+
+.boton-copiar:hover {
+    background: var(--Hover-Blue);
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--font);
+    color: var(--Gray);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Gray);
+}
